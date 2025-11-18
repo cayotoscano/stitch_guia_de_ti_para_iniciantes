@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Desenvolvimento Web - Guia de TI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center">
+                <div class="layout-content-container flex flex-col w-full max-w-7xl">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#232f48] px-4 sm:px-10 py-3 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+                        <div class="flex items-center gap-4 text-black dark:text-white">
+                            <div class="size-6 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_330)">
+                                        <path clip-rule="evenodd"
+                                            d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_6_330">
+                                            <rect fill="white" height="48" width="48"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Guia de TI</h2>
+                        </div>
+                        <div class="hidden sm:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                    href="index.html">Home</a>
+                                <a class="text-primary dark:text-primary text-sm font-medium leading-normal"
+                                    href="">Áreas de TI</a>
+                                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                    href="Biblioteca.html">Biblioteca</a>
+                                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                    href="sobre.html">Sobre</a>
+                            </div>
+                        </div>
+                        <button class="sm:hidden text-gray-700 dark:text-gray-300">
+                            <span class="material-symbols-outlined text-3xl">menu</span>
+                        </button>
+                    </header>
+                    <main class="flex-1 px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+                        <div class="mx-auto max-w-4xl">
+                            <div class="flex flex-col gap-12">
+                                <div class="flex flex-col gap-4 text-center items-center">
+                                    <div
+                                        class="flex items-center justify-center size-16 rounded-xl bg-primary/10 text-primary mb-4">
+                                        <span class="material-symbols-outlined !text-4xl">code</span>
+                                    </div>
+                                    <h1
+                                        class="text-gray-900 dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                        Desenvolvimento Web</h1>
+                                    <p class="text-gray-500 dark:text-[#92a4c9] text-lg font-normal leading-normal max-w-3xl">
+                                        Construção e manutenção de sites, sistemas web e aplicações complexas. Abrange tanto o lado
+                                        do cliente (Frontend) quanto o lado do servidor (Backend), sendo a espinha dorsal da
+                                        internet.
+                                    </p>
+                                </div>
+                                <section
+                                    class="rounded-xl border border-primary/30 bg-primary/5 dark:border-primary/40 dark:bg-primary/10 p-6 sm:p-8">
+                                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                                        <div class="flex-shrink-0">
+                                            <span class="material-symbols-outlined !text-5xl text-primary">trending_up</span>
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.015em] mb-2">
+                                                Demanda para 2026</h2>
+                                            <p class="text-gray-600 dark:text-[#c7d4ee] text-base leading-relaxed">
+                                                A demanda por desenvolvedores Full-Stack e especialistas em Frameworks Modernos
+                                                (como React, Vue e Next.js) e APIs continuará extremamente alta. A necessidade de
+                                                experiências de usuário fluidas (Frontend) e sistemas robustos e escaláveis (Backend)
+                                                em todos os setores garante ao Desenvolvimento Web uma posição de destaque no mercado
+                                                de TI.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="flex flex-col gap-6">
+                                    <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                                        Ferramentas e Tecnologias Essenciais</h2>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                        <div
+                                            class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                                            <span class="material-symbols-outlined text-yellow-500 !text-5xl">terminal</span>
+                                            <h3 class="text-gray-900 dark:text-white text-lg font-bold">JavaScript/TypeScript</h3>
+                                            <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Linguagem universal do desenvolvimento
+                                                web, essencial tanto para o Frontend quanto para o Backend (com Node.js).</p>
+                                        </div>
+                                        <div
+                                            class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                                            <span class="material-symbols-outlined text-primary !text-5xl">widgets</span>
+                                            <h3 class="text-gray-900 dark:text-white text-lg font-bold">Frameworks Frontend</h3>
+                                            <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Bibliotecas como React, Vue e
+                                                Angular são cruciais para criar interfaces de usuário interativas e dinâmicas.</p>
+                                        </div>
+                                        <div
+                                            class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                                            <span class="material-symbols-outlined text-red-500 !text-5xl">database</span>
+                                            <h3 class="text-gray-900 dark:text-white text-lg font-bold">Bancos de Dados (SQL/NoSQL)</h3>
+                                            <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Conhecimento em SQL (PostgreSQL,
+                                                MySQL) e NoSQL (MongoDB) é fundamental para persistir e gerenciar dados de aplicações.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                                        Habilidades Mais Requisitadas para 2026</h2>
+                                    <div class="flex flex-col gap-4">
+                                        <div
+                                            class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                                            <span class="material-symbols-outlined text-primary mt-1">developer_board</span>
+                                            <div>
+                                                <h4 class="text-gray-900 dark:text-white font-bold">Desenvolvimento Full-Stack (MERN/MEAN)</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Capacidade de atuar tanto na criação
+                                                    de interfaces (Frontend) quanto na lógica de servidor e banco de dados (Backend).</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                                            <span class="material-symbols-outlined text-primary mt-1">cloud_sync</span>
+                                            <div>
+                                                <h4 class="text-gray-900 dark:text-white font-bold">Criação e Consumo de APIs</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Essencial para a comunicação entre
+                                                    Frontend e Backend, usando padrões como RESTful ou GraphQL.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                                            <span class="material-symbols-outlined text-primary mt-1">devices</span>
+                                            <div>
+                                                <h4 class="text-gray-900 dark:text-white font-bold">Design Responsivo e Performance</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Garantir que as aplicações funcionem
+                                                    perfeitamente em diferentes dispositivos (móvel, desktop) e sejam rápidas para o usuário.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                                        Por Onde Começar? Recomendações de Estudo</h2>
+                                    <div
+                                        class="flex flex-col divide-y divide-gray-200 dark:divide-[#232f48] rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233] overflow-hidden">
+                                        <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                                            href="#">
+                                            <div
+                                                class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                                                <span class="material-symbols-outlined">school</span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-gray-900 dark:text-white font-semibold">Caminhos de Aprendizagem: The Odin
+                                                    Project / freeCodeCamp</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Plataformas gratuitas e completas
+                                                    que oferecem um currículo passo a passo do zero ao Full-Stack.</p>
+                                            </div>
+                                            <span
+                                                class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                                        </a>
+                                        <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                                            href="#">
+                                            <div
+                                                class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                                                <span class="material-symbols-outlined">menu_book</span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-gray-900 dark:text-white font-semibold">Referência: MDN Web Docs (Mozilla)</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">A documentação oficial mais
+                                                    confiável e detalhada para HTML, CSS e JavaScript.</p>
+                                            </div>
+                                            <span
+                                                class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                                        </a>
+                                        <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                                            href="#">
+                                            <div
+                                                class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                                                <span class="material-symbols-outlined">public</span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-gray-900 dark:text-white font-semibold">Prática: Construa Seu Portfólio no
+                                                    GitHub</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">O conhecimento só é consolidado
+                                                    com a prática. Crie projetos reais (clones, utilitários, portfólio) para demonstrar suas
+                                                    habilidades.</p>
+                                            </div>
+                                            <span
+                                                class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="mt-auto border-t border-gray-200 dark:border-[#232f48] py-4 px-4 sm:px-10">
+                        <div class="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6">
+                            <div class="text-center">
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    © 2025 Guia de TI. Todos os direitos reservados.
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

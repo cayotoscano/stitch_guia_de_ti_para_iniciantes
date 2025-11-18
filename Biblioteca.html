@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Guia de TI - Biblioteca de Estudos</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="flex flex-1 justify-center">
+        <div class="layout-content-container flex flex-col w-full max-w-7xl">
+          <!-- TopNavBar -->
+          <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#232f48] px-4 sm:px-10 py-3 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+            <div class="flex items-center gap-4 text-black dark:text-white">
+              <div class="size-6 text-primary">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_330)">
+                    <path clip-rule="evenodd"
+                      d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                      fill="currentColor" fill-rule="evenodd"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_6_330">
+                      <rect fill="white" height="48" width="48"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Guia de TI</h2>
+            </div>
+            <div class="hidden sm:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                  href="index.html">Home</a>
+                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                  href="areas.html">Áreas de TI</a>
+                <a class="text-primary dark:text-primary text-sm font-medium leading-normal" href="">Biblioteca</a>
+                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                  href="sobre.html">Sobre</a>
+              </div>
+            </div>
+            <button class="sm:hidden text-gray-700 dark:text-gray-300">
+              <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+          </header>
+          <main class="flex-1 px-4 py-8 sm:px-6 md:px-4">
+            <!-- PageHeading -->
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-black dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Biblioteca
+                  de Estudos de TI</p>
+                <p class="text-gray-500 dark:text-[#92a4c9] text-base font-normal leading-normal">Encontre videoaulas,
+                  documentação, tutoriais e outros materiais para impulsionar sua carreira.</p>
+              </div>
+            </div>
+            <!-- SearchBar -->
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                  <div
+                    class="text-gray-400 dark:text-[#92a4c9] flex border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#232f48] items-center justify-center pl-4 rounded-l-lg border-r-0">
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary focus:ring-inset border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#232f48] h-full placeholder:text-gray-400 dark:placeholder:text-[#92a4c9] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    placeholder="Buscar por ferramenta, tecnologia, etc." value="" />
+                </div>
+              </label>
+            </div>
+            <!-- Chips -->
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-primary/30 dark:hover:bg-primary/20">
+                <p class="text-primary dark:text-white text-sm font-medium leading-normal">Todos</p>
+              </div>
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-primary/20">
+                <p class="text-gray-700 dark:text-white text-sm font-medium leading-normal">Front-End</p>
+              </div>
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-primary/20">
+                <p class="text-gray-700 dark:text-white text-sm font-medium leading-normal">Back-End</p>
+              </div>
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-primary/20">
+                <p class="text-gray-700 dark:text-white text-sm font-medium leading-normal">Ciência de Dados</p>
+              </div>
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-primary/20">
+                <p class="text-gray-700 dark:text-white text-sm font-medium leading-normal">DevOps &amp; Cloud</p>
+              </div>
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-primary/20">
+                <p class="text-gray-700 dark:text-white text-sm font-medium leading-normal">Segurança</p>
+              </div>
+              <div
+                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-[#232f48] px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-primary/20">
+                <p class="text-gray-700 dark:text-white text-sm font-medium leading-normal">UI/UX</p>
+              </div>
+            </div>
+            <!-- ImageGrid -->
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 p-4">
+              <div
+                class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1A2333] border border-gray-200 dark:border-[#232f48] hover:shadow-lg dark:hover:border-primary/50 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="bg-primary/20 text-primary p-2 rounded-lg"><span
+                      class="material-symbols-outlined">description</span></div>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-medium">Documentação Oficial</p>
+                </div>
+                <div>
+                  <p class="text-black dark:text-white text-base font-bold leading-normal">Documentação Oficial do React
+                  </p>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal mt-1">Guia completo
+                    para aprender o framework React.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">React</span>
+                  <span
+                    class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">JavaScript</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Front-End</span>
+                </div>
+                <a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">Acessar <span
+                    class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1A2333] border border-gray-200 dark:border-[#232f48] hover:shadow-lg dark:hover:border-primary/50 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="bg-primary/20 text-primary p-2 rounded-lg"><span
+                      class="material-symbols-outlined">smart_display</span></div>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-medium">Videoaula</p>
+                </div>
+                <div>
+                  <p class="text-black dark:text-white text-base font-bold leading-normal">Curso em Vídeo: SQL para
+                    Iniciantes</p>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal mt-1">Aprenda os
+                    fundamentos de bancos de dados relacionais.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">SQL</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Database</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Back-End</span>
+                </div>
+                <a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">Acessar <span
+                    class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1A2333] border border-gray-200 dark:border-[#232f48] hover:shadow-lg dark:hover:border-primary/50 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="bg-primary/20 text-primary p-2 rounded-lg"><span
+                      class="material-symbols-outlined">integration_instructions</span></div>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-medium">Tutorial</p>
+                </div>
+                <div>
+                  <p class="text-black dark:text-white text-base font-bold leading-normal">Criando sua primeira API com
+                    Node.js</p>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal mt-1">Passo a passo
+                    para construir um backend simples.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Node.js</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">API</span>
+                  <span
+                    class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">JavaScript</span>
+                </div>
+                <a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">Acessar <span
+                    class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1A2333] border border-gray-200 dark:border-[#232f48] hover:shadow-lg dark:hover:border-primary/50 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="bg-primary/20 text-primary p-2 rounded-lg"><span
+                      class="material-symbols-outlined">cloud</span></div>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-medium">Artigo</p>
+                </div>
+                <div>
+                  <p class="text-black dark:text-white text-base font-bold leading-normal">Introdução a Docker e
+                    Contêineres</p>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal mt-1">Conceitos
+                    essenciais de DevOps e Cloud.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Docker</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">DevOps</span>
+                </div>
+                <a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">Acessar <span
+                    class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1A2333] border border-gray-200 dark:border-[#232f48] hover:shadow-lg dark:hover:border-primary/50 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="bg-primary/20 text-primary p-2 rounded-lg"><span
+                      class="material-symbols-outlined">design_services</span></div>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-medium">Curso</p>
+                </div>
+                <div>
+                  <p class="text-black dark:text-white text-base font-bold leading-normal">Fundamentos de UI/UX Design
+                  </p>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal mt-1">Princípios de
+                    design para interfaces intuitivas.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">UI</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">UX</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Figma</span>
+                </div>
+                <a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">Acessar <span
+                    class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1A2333] border border-gray-200 dark:border-[#232f48] hover:shadow-lg dark:hover:border-primary/50 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                  <div class="bg-primary/20 text-primary p-2 rounded-lg"><span
+                      class="material-symbols-outlined">query_stats</span></div>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-medium">Videoaula</p>
+                </div>
+                <div>
+                  <p class="text-black dark:text-white text-base font-bold leading-normal">Python para Análise de Dados
+                  </p>
+                  <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal mt-1">Utilize
+                    bibliotecas como Pandas e NumPy.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Python</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Pandas</span>
+                  <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Data
+                    Science</span>
+                </div>
+                <a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">Acessar <span
+                    class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a>
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="flex justify-center p-4 mt-8">
+              <button
+                class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-[#232f48] text-primary dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/20 transition-colors">
+                <span class="truncate">Carregar Mais</span>
+              </button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

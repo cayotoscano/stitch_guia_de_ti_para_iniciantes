@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Infraestrutura e Redes - Guia de TI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center">
+                <div class="layout-content-container flex flex-col w-full max-w-7xl">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#232f48] px-4 sm:px-10 py-3 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+                        <div class="flex items-center gap-4 text-black dark:text-white">
+                            <div class="size-6 text-primary">
+                                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_330)">
+                                        <path clip-rule="evenodd"
+                                            d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_6_330">
+                                            <rect fill="white" height="48" width="48"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Guia de TI</h2>
+                        </div>
+                        <div class="hidden sm:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                    href="index.html">Home</a>
+                                <a class="text-primary dark:text-primary text-sm font-medium leading-normal"
+                                    href="">Áreas de TI</a>
+                                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                    href="Biblioteca.html">Biblioteca</a>
+                                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                    href="sobre.html">Sobre</a>
+                            </div>
+                        </div>
+                        <button class="sm:hidden text-gray-700 dark:text-gray-300">
+                            <span class="material-symbols-outlined text-3xl">menu</span>
+                        </button>
+                    </header>
+                    <main class="flex-1 px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+                        <div class="mx-auto max-w-4xl">
+                            <div class="flex flex-col gap-12">
+                                <div class="flex flex-col gap-4 text-center items-center">
+                                    <div
+                                        class="flex items-center justify-center size-16 rounded-xl bg-primary/10 text-primary mb-4">
+                                        <span class="material-symbols-outlined !text-4xl">router</span>
+                                    </div>
+                                    <h1
+                                        class="text-gray-900 dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                        Infraestrutura e Redes</h1>
+                                    <p class="text-gray-500 dark:text-[#92a4c9] text-lg font-normal leading-normal max-w-3xl">
+                                        Responsável por planejar, implementar, gerenciar e manter os sistemas físicos e
+                                        virtuais (servidores, redes, armazenamento, nuvem) que sustentam todas as
+                                        operações de tecnologia da informação de uma organização.
+                                    </p>
+                                </div>
+                                <section
+                                    class="rounded-xl border border-primary/30 bg-primary/5 dark:border-primary/40 dark:bg-primary/10 p-6 sm:p-8">
+                                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                                        <div class="flex-shrink-0">
+                                            <span class="material-symbols-outlined !text-5xl text-primary">cloud_done</span>
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.015em] mb-2">
+                                                Demanda para 2026</h2>
+                                            <p class="text-gray-600 dark:text-[#c7d4ee] text-base leading-relaxed">
+                                                A demanda por especialistas em Cloud Computing (Multi-Cloud), DevOps e
+                                                Redes Definidas por Software (SDN) continuará em forte ascensão. A
+                                                migração de data centers tradicionais para ambientes de nuvem híbrida e a
+                                                necessidade de automação e escalabilidade garantem que a Infraestrutura e
+                                                Redes permaneçam como pilares essenciais para a inovação e o crescimento
+                                                dos negócios.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="flex flex-col gap-6">
+                                    <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                                        Pilares e Tecnologias Essenciais</h2>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                        <div
+                                            class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                                            <span class="material-symbols-outlined text-green-500 !text-5xl">settings_ethernet</span>
+                                            <h3 class="text-gray-900 dark:text-white text-lg font-bold">Redes (TCP/IP e Roteamento)</h3>
+                                            <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Domínio dos protocolos básicos,
+                                                configuração de roteadores, switches, VLANs e segurança de rede.</p>
+                                        </div>
+                                        <div
+                                            class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                                            <span class="material-symbols-outlined text-red-500 !text-5xl">storage</span>
+                                            <h3 class="text-gray-900 dark:text-white text-lg font-bold">Sistemas Operacionais (Linux/Windows)</h3>
+                                            <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Administração de servidores,
+                                                virtualização (VMware, Hyper-V) e gerenciamento de ambientes de produção.</p>
+                                        </div>
+                                        <div
+                                            class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                                            <span class="material-symbols-outlined text-yellow-500 !text-5xl">public</span>
+                                            <h3 class="text-gray-900 dark:text-white text-lg font-bold">Computação em Nuvem (IaaS, PaaS)</h3>
+                                            <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Trabalhar com serviços dos
+                                                grandes provedores (AWS, Azure, GCP), focando em provisionamento e arquitetura.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                                        Habilidades Mais Requisitadas para 2026</h2>
+                                    <div class="flex flex-col gap-4">
+                                        <div
+                                            class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                                            <span class="material-symbols-outlined text-primary mt-1">auto_fix_high</span>
+                                            <div>
+                                                <h4 class="text-gray-900 dark:text-white font-bold">Automação e DevOps</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Uso de ferramentas como Terraform,
+                                                    Ansible e Kubernetes para automatizar o provisionamento e a gestão de infra.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                                            <span class="material-symbols-outlined text-primary mt-1">webhook</span>
+                                            <div>
+                                                <h4 class="text-gray-900 dark:text-white font-bold">Contêineres e Orquestração</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Proficiência em Docker e
+                                                    Kubernetes para empacotar e gerenciar aplicações em escala e em ambientes de nuvem.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                                            <span class="material-symbols-outlined text-primary mt-1">leaderboard</span>
+                                            <div>
+                                                <h4 class="text-gray-900 dark:text-white font-bold">Monitoramento e Observabilidade</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Implementação de soluções como
+                                                    Prometheus, Grafana e ELK Stack para garantir a saúde e a performance dos sistemas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                                        Por Onde Começar? Recomendações de Estudo</h2>
+                                    <div
+                                        class="flex flex-col divide-y divide-gray-200 dark:divide-[#232f48] rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233] overflow-hidden">
+                                        <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                                            href="#">
+                                            <div
+                                                class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                                                <span class="material-symbols-outlined">school</span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-gray-900 dark:text-white font-semibold">Certificações Básicas: CompTIA A+ / Cisco CCNA</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Fundamentos essenciais de
+                                                    hardware, sistemas operacionais e o básico de redes e roteamento.</p>
+                                            </div>
+                                            <span
+                                                class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                                        </a>
+                                        <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                                            href="#">
+                                            <div
+                                                class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                                                <span class="material-symbols-outlined">menu_book</span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-gray-900 dark:text-white font-semibold">Caminhos Cloud: AWS Certified Cloud Practitioner / Azure Fundamentals</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Conhecimento introdutório dos
+                                                    serviços e da arquitetura de nuvem mais utilizadas no mercado.</p>
+                                            </div>
+                                            <span
+                                                class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                                        </a>
+                                        <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                                            href="#">
+                                            <div
+                                                class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                                                <span class="material-symbols-outlined">public</span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-gray-900 dark:text-white font-semibold">Prática: Crie um Home Lab e Use Containers</h4>
+                                                <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Monte um ambiente virtual (Home
+                                                    Lab) e pratique a instalação e orquestração de serviços usando Docker e Kubernetes.</p>
+                                            </div>
+                                            <span
+                                                class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="mt-auto border-t border-gray-200 dark:border-[#232f48] py-4 px-4 sm:px-10">
+                        <div class="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6">
+                            <div class="text-center">
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    © 2025 Guia de TI. Todos os direitos reservados.
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Ciência de Dados &amp; IA - Guia de TI</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="flex flex-1 justify-center">
+        <div class="layout-content-container flex flex-col w-full max-w-7xl">
+          <!-- TopNavBar -->
+          <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#232f48] px-4 sm:px-10 py-3 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+            <div class="flex items-center gap-4 text-black dark:text-white">
+              <div class="size-6 text-primary">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_330)">
+                    <path clip-rule="evenodd"
+                      d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                      fill="currentColor" fill-rule="evenodd"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_6_330">
+                      <rect fill="white" height="48" width="48"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Guia de TI</h2>
+            </div>
+            <div class="hidden sm:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                  href="index.html">Home</a>
+                <a class="text-primary dark:text-primary text-sm font-medium leading-normal" href="">Áreas de TI</a>
+                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                  href="Biblioteca.html">Biblioteca</a>
+                <a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                  href="sobre.html">Sobre</a>
+              </div>
+            </div>
+            <button class="sm:hidden text-gray-700 dark:text-gray-300">
+              <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+          </header>
+      <main class="flex-1 px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <div class="mx-auto max-w-4xl">
+          <div class="flex flex-col gap-12">
+            <div class="flex flex-col gap-4 text-center items-center">
+              <div class="flex items-center justify-center size-16 rounded-xl bg-primary/10 text-primary mb-4">
+                <span class="material-symbols-outlined !text-4xl">neurology</span>
+              </div>
+              <h1
+                class="text-gray-900 dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">
+                Ciência de Dados &amp; IA</h1>
+              <p class="text-gray-500 dark:text-[#92a4c9] text-lg font-normal leading-normal max-w-3xl">
+                Análise de grandes volumes de dados para extrair insights e construção de sistemas inteligentes que
+                podem aprender e tomar decisões. Uma das áreas mais promissoras para o futuro da tecnologia.
+              </p>
+            </div>
+                        <section
+              class="rounded-xl border border-primary/30 bg-primary/5 dark:border-primary/40 dark:bg-primary/10 p-6 sm:p-8">
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <div class="flex-shrink-0">
+                  <span class="material-symbols-outlined !text-5xl text-primary">trending_up</span>
+                </div>
+                <div>
+                  <h2
+                    class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.015em] mb-2">
+                    Demanda para 2026</h2>
+                  <p class="text-gray-600 dark:text-[#c7d4ee] text-base leading-relaxed">
+                    A demanda por profissionais de DevOps e Infraestrutura continuará em alta. Com a migração acelerada
+                    para a nuvem e a necessidade de ciclos de desenvolvimento mais rápidos e seguros, especialistas
+                    capazes de gerenciar infraestruturas complexas e automatizar processos serão cada vez mais
+                    valorizados. Estima-se um crescimento significativo na área, tornando-a uma das mais promissoras
+                    para os próximos anos.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                Ferramentas e Tecnologias Essenciais</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                  class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                  <img alt="Python Logo" class="w-12 h-12"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBJRbxCyrctZPn5peT0jZmJ4uXfOVBJbLaGWpPf4syIH-cwf0J3sjdLjwZRseKVyfYRsDJPZO9dDHO-r7qp3CjszFFcRUYJilLvcyBwq7WaAv0Iv-XzLchQudHoHfKkMJtlm08WSdiYmX-YTkAnBx12R7xw79zX8B1VumbTtUuX-P8zTmxug3fYAjWQpQTVuhID3l2mzqMDtaO7yVV8W-9Swn9h4wdNMe6lyqcC0mklCSvJ0nMxCU8xtmoftdItICstQcjOOEaRW7q" />
+                  <h3 class="text-gray-900 dark:text-white text-lg font-bold">Python</h3>
+                  <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Linguagem principal para análise de dados,
+                    machine learning e IA, com bibliotecas como Pandas, NumPy e Scikit-learn.</p>
+                </div>
+                <div
+                  class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                  <img alt="TensorFlow Logo" class="w-12 h-12"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwIhvAHd1aE49j22bObqPmV9BfPKYiADLzZ9fGai2qlzPBULZBFpQgLKtH_3llD3UJ-vYZtoSVU3ctQ3xzrFxLhk1g4a0amGAokAVmj6sC-aUM0Th-0OV5VJCYJIYh7TThQjPMvvj8Eh_Qul1jHSY_X671QnzVOvlRIxc3gG8HfmzoYsAmY2AwnA2M03W_BEn1oUePpFOBSNdNs3o79qjfso91XsZYX9N0_M9yQiFHTbKRUhbcAO8Xj_muMjXXGzNSMCpCQanzfCu5" />
+                  <h3 class="text-gray-900 dark:text-white text-lg font-bold">TensorFlow &amp; PyTorch</h3>
+                  <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Frameworks de código aberto para a criação e
+                    treinamento de modelos complexos de machine learning e deep learning.</p>
+                </div>
+                <div
+                  class="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233]">
+                  <img alt="SQL Icon" class="w-12 h-12"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJCUDSAKb5wX1kxHIzo9Pt2NBPC0HEkhiPp9YM5KIytlAAAoDT3E8CU14vyDmLluHnKv-8w3T-W_gAY4mDicsfzFwcR3VEzIAw3nlhc3__YrPhy_kMKx8kZNOEwYBLPBJxnHgV0NJdXwpaewFIj_G4BFsc922WspHQuU_7I_7A0i9fDniA5TvQLcMOLsmQ32Fukz5rcTswsnCchgloyGjX25t1UVBR4kLeQKWa7hobPSexSZ8ahuhbHWXIppakB4cB2adnXUm5ylLZ" />
+                  <h3 class="text-gray-900 dark:text-white text-lg font-bold">SQL</h3>
+                  <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Linguagem crucial para gerenciar, consultar e
+                    extrair dados de bancos de dados relacionais, o ponto de partida para qualquer análise.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                Habilidades Mais Requisitadas para 2026</h2>
+              <div class="flex flex-col gap-4">
+                <div
+                  class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                  <span class="material-symbols-outlined text-primary mt-1">model_training</span>
+                  <div>
+                    <h4 class="text-gray-900 dark:text-white font-bold">Machine Learning e Deep Learning</h4>
+                    <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Capacidade de criar e implementar algoritmos
+                      que aprendem com dados para fazer previsões e automatizar tarefas.</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                  <span class="material-symbols-outlined text-primary mt-1">analytics</span>
+                  <div>
+                    <h4 class="text-gray-900 dark:text-white font-bold">Análise Estatística e Modelagem de Dados</h4>
+                    <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Fundamento matemático para interpretar dados,
+                      identificar padrões, testar hipóteses e construir modelos preditivos confiáveis.</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 rounded-lg bg-white dark:bg-[#192233] border border-gray-200 dark:border-[#232f48]">
+                  <span class="material-symbols-outlined text-primary mt-1">bubble_chart</span>
+                  <div>
+                    <h4 class="text-gray-900 dark:text-white font-bold">Visualização de Dados e Storytelling</h4>
+                    <p class="text-gray-600 dark:text-[#92a4c9] text-sm">Habilidade de comunicar insights complexos de
+                      forma clara e persuasiva através de gráficos e narrativas (storytelling).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-gray-900 dark:text-white text-2xl sm:text-3xl font-bold leading-tight tracking-[-0.02em]">
+                Por Onde Começar? Recomendações de Estudo</h2>
+              <div
+                class="flex flex-col divide-y divide-gray-200 dark:divide-[#232f48] rounded-xl border border-gray-200 dark:border-[#232f48] bg-white dark:bg-[#192233] overflow-hidden">
+                <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                  href="#">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                    <span class="material-symbols-outlined">school</span>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="text-gray-900 dark:text-white font-semibold">Curso: "Machine Learning" por Andrew Ng
+                      (Coursera)</h4>
+                    <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Considerado o curso introdutório mais
+                      clássico e fundamental da área. Cobre os conceitos essenciais de Machine Learning.</p>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                </a>
+                <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                  href="#">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                    <span class="material-symbols-outlined">menu_book</span>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="text-gray-900 dark:text-white font-semibold">Livro: "Python for Data Analysis" por Wes
+                      McKinney</h4>
+                    <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Escrito pelo criador da biblioteca Pandas,
+                      é o guia definitivo para manipulação e análise de dados com Python.</p>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                </a>
+                <a class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 hover:bg-gray-50 dark:hover:bg-[#232f48] transition-colors duration-200"
+                  href="#">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary flex-shrink-0">
+                    <span class="material-symbols-outlined">public</span>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="text-gray-900 dark:text-white font-semibold">Plataforma: Kaggle</h4>
+                    <p class="text-gray-600 dark:text-[#92a4c9] text-sm mt-1">Participe de competições, acesse datasets
+                      reais e aprenda com notebooks de outros cientistas de dados. Essencial para prática.</p>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto flex-shrink-0">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+          <!-- Footer -->
+          <footer class="mt-auto border-t border-gray-200 dark:border-[#232f48] py-4 px-4 sm:px-10">
+            <div class="max-w-5xl mx-auto flex flex-col items-center justify-center gap-6">
+              <div class="text-center">
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                  © 2025 Guia de TI. Todos os direitos reservados.
+                </p>
+              </div>
+            </div>
+          </footer>
+    </div>
+  </div>
+</body>
+
+</html>
